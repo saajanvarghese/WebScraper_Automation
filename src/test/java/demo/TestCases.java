@@ -1,6 +1,7 @@
 package demo;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -23,7 +24,7 @@ public class TestCases {
 
     }
 
-    
+    @Test
     public  void testCase01(){
         System.out.println("Start Test case: testCase01");
         driver.get("https://www.google.com");
