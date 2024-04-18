@@ -29,6 +29,22 @@ implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version:
 //TestNG Dependency
 // https://mvnrepository.com/artifact/org.testng/testng
 testImplementation group: 'org.testng', name: 'testng', version: '7.10.1'
+
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml
+implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.17.0'
+
 }
+
+test {
+    useTestNG() {
+        suites 'src/test/resources/testng.xml'
+    }
+
+    testLogging {
+        showStandardStreams = true
+        events "passed", "skipped", "failed"
+    }
+}
+
 
 mainClassName = 'demo.App'
