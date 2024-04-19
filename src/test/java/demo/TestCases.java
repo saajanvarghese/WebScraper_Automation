@@ -2,6 +2,7 @@ package demo;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -9,6 +10,8 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -35,7 +38,7 @@ public class TestCases {
 
     }
 
-    @Test
+    //@Test
     public void testCase01() throws InterruptedException{
         System.out.println("Start Test case: testCase01");
         driver.get("https://www.scrapethissite.com/pages/");
@@ -52,7 +55,7 @@ public class TestCases {
          ArrayList<HashMap<String, String>> dataList = new ArrayList<>();
 
          WebElement clickPageButton = driver.findElement(By.xpath("//a[@aria-label='Next']"));
-         clickPageButton.click();
+         SeleniumWrapper.clickAction(clickPageButton, driver);
 
          // Iterate through 4 pages
          for (int page = 1; page <= 4; page++) {
@@ -103,5 +106,28 @@ public class TestCases {
             e.printStackTrace();
         }
         System.out.println("end Test case: testCase01");
+    }
+    
+    @Test
+    public void testCase02() throws InterruptedException{
+
+        System.out.println("Start Test case: testCase02");
+
+        driver.get("https://www.scrapethissite.com/pages/");
+
+        Assert.assertTrue(driver.getCurrentUrl().equals("https://www.scrapethissite.com/pages/"), "Unverified URL");
+        System.out.println("Verified URL: https://www.scrapethissite.com/pages/");
+
+        WebElement oscarWiningFlims = driver.findElement(By.linkText("Oscar Winning Films: AJAX and Javascript"));
+        SeleniumWrapper.clickAction(oscarWiningFlims, driver);
+
+        Utilities.scrape(driver, "2015");
+        Utilities.scrape(driver, "2014");
+        Utilities.scrape(driver, "2013");
+        Utilities.scrape(driver, "2012");
+        Utilities.scrape(driver, "2011");
+        Utilities.scrape(driver, "2010");
+
+        System.out.println("End Test case: testCase02");
     }
 }
