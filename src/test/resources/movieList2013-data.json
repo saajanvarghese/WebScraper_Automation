@@ -1,1 +1,37 @@
-[{"isWinner":"true","Nominations":"9","Awards":"3","Year":"2013","Title":"12 Years a Slave"},{"isWinner":"false","Nominations":"10","Awards":"7","Year":"2013","Title":"Gravity"},{"isWinner":"false","Nominations":"6","Awards":"3","Year":"2013","Title":"Dallas Buyers Club"},{"isWinner":"false","Nominations":"2","Awards":"2","Year":"2013","Title":"Frozen"},{"isWinner":"false","Nominations":"2","Awards":"2","Year":"2013","Title":"The Great Gatsby"}]
+[
+    {
+        "isWinner": "true",
+        "Nominations": "9",
+        "Awards": "3",
+        "Year": "2013",
+        "Title": "12 Years a Slave"
+    },
+    {
+        "isWinner": "false",
+        "Nominations": "10",
+        "Awards": "7",
+        "Year": "2013",
+        "Title": "Gravity"
+    },
+    {
+        "isWinner": "false",
+        "Nominations": "6",
+        "Awards": "3",
+        "Year": "2013",
+        "Title": "Dallas Buyers Club"
+    },
+    {
+        "isWinner": "false",
+        "Nominations": "2",
+        "Awards": "2",
+        "Year": "2013",
+        "Title": "Frozen"
+    },
+    {
+        "isWinner": "false",
+        "Nominations": "2",
+        "Awards": "2",
+        "Year": "2013",
+        "Title": "The Great Gatsby"
+    }
+]

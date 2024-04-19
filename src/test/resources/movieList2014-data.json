@@ -1,1 +1,37 @@
-[{"isWinner":"true","Nominations":"9","Awards":"4","Year":"2014","Title":"Birdman"},{"isWinner":"false","Nominations":"9","Awards":"4","Year":"2014","Title":"The Grand Budapest Hotel"},{"isWinner":"false","Nominations":"5","Awards":"3","Year":"2014","Title":"Whiplash"},{"isWinner":"false","Nominations":"8","Awards":"1","Year":"2014","Title":"The Imitation Game"},{"isWinner":"false","Nominations":"6","Awards":"1","Year":"2014","Title":"American Sniper"}]
+[
+    {
+        "isWinner": "true",
+        "Nominations": "9",
+        "Awards": "4",
+        "Year": "2014",
+        "Title": "Birdman"
+    },
+    {
+        "isWinner": "false",
+        "Nominations": "9",
+        "Awards": "4",
+        "Year": "2014",
+        "Title": "The Grand Budapest Hotel"
+    },
+    {
+        "isWinner": "false",
+        "Nominations": "5",
+        "Awards": "3",
+        "Year": "2014",
+        "Title": "Whiplash"
+    },
+    {
+        "isWinner": "false",
+        "Nominations": "8",
+        "Awards": "1",
+        "Year": "2014",
+        "Title": "The Imitation Game"
+    },
+    {
+        "isWinner": "false",
+        "Nominations": "6",
+        "Awards": "1",
+        "Year": "2014",
+        "Title": "American Sniper"
+    }
+]
