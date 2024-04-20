@@ -17,10 +17,10 @@ Go to https://www.scrapethissite.com/pages/.  Check the Current URL using Assert
 3. Convert the ArrayList<HashMap> object to a JSON file named `hockey-team-data.json`. Feel free to use Jackson library.
 Each Hashmap object should contain: 
 
-. Epoch Time of Scrape
-. Team Name
-. Year
-. Win %
+- Epoch Time of Scrape
+- Team Name
+- Year
+- Win %
 
 4. Store the file in the output folder in the root directory. Assert using TestNG that the file is present and not empty.
 
