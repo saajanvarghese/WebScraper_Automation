@@ -41,20 +41,27 @@ public class TestCases {
     //@Test
     public void testCase01() throws InterruptedException{
         System.out.println("Start Test case: testCase01");
+        // Navigate to the link
         driver.get("https://www.scrapethissite.com/pages/");
 
+        // Verify the current link with Assert Statements
         Assert.assertTrue(driver.getCurrentUrl().equals("https://www.scrapethissite.com/pages/"), "Unverified URL");
         System.out.println("Verified URL: https://www.scrapethissite.com/pages/");
 
+        // Locate HockeyTeams link
         WebElement HockeyTeamsLink = driver.findElement(By.linkText("Hockey Teams: Forms, Searching and Pagination"));
 
+        //Click HockeyTeams Link
         SeleniumWrapper.clickAction(HockeyTeamsLink, driver);
 
         Thread.sleep(3000);
 
+        // Initialize and declare a HashMap ArrayList called dataList
          ArrayList<HashMap<String, String>> dataList = new ArrayList<>();
 
+         // Locate Page 1
          WebElement clickPageButton = driver.findElement(By.xpath("//a[@aria-label='Next']"));
+         //Click Page 1
          SeleniumWrapper.clickAction(clickPageButton, driver);
 
          // Iterate through 4 pages
@@ -63,8 +70,11 @@ public class TestCases {
             List<WebElement> rows = driver.findElements(By.xpath("//tr[@class='team']"));
             for (WebElement row : rows) {
                 // Extract data from each row
+                //Get text from TeamName Locator
                 String teamName = row.findElement(By.xpath("./td[@class='name']")).getText();
+                //Get text from Year Locator and convert it to int using Integer.parseInt();
                 int year = Integer.parseInt(row.findElement(By.xpath("./td[@class='year']")).getText());
+                //Get text from Year Locator and convert it to double using Double.parseDouble();
                 double winPercentage = Double.parseDouble(row.findElement(By.xpath("./td[contains(@class, 'pct') and (contains(@class, 'text-success') or contains(@class, 'text-danger'))]")).getText());
 
                 // Check if win percentage is less than 40%
@@ -97,6 +107,7 @@ public class TestCases {
                     ", Win Percentage: " + data.get("WinPercentage"));
         }
 
+        // Store the HashMap Data in a json File
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             File jsonFile = new File("D:/Automation Crio projects/Crio-Code-A-Thon Assignments/WebScraper/selenium-starter-2/src/test/resources/hockey-team-data.json");
@@ -107,7 +118,7 @@ public class TestCases {
         }
         System.out.println("end Test case: testCase01");
     }
-    
+
     @Test
     public void testCase02() throws InterruptedException{
 
