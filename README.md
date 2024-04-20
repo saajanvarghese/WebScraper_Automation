@@ -14,11 +14,13 @@ Go to https://www.scrapethissite.com/pages/.  Check the Current URL using Assert
 
 2. Iterate through 4 pages of this data and store it in a ArrayList<HashMap>.
 
-3. Convert the ArrayList<HashMap> object to a JSON file named `hockey-team-data.json`. Feel free to use Jackson library.Each Hashmap object should contain: 
-i) Epoch Time of Scrape
-ii)Team Name
-iii)Year
-iv)Win %
+3. Convert the ArrayList<HashMap> object to a JSON file named `hockey-team-data.json`. Feel free to use Jackson library.
+Each Hashmap object should contain: 
+
+1. Epoch Time of Scrape
+2. Team Name
+3. Year
+4. Win %
 
 4. Store the file in the output folder in the root directory. Assert using TestNG that the file is present and not empty.
 
@@ -31,13 +33,15 @@ iv)Win %
 
 4. Keep a variable to maintain the year from which the data is scraped.
 
-5. Convert the ArrayList<HashMap> object to a JSON file named `oscar-winner-data.json`. Each HashMap object should contain:
-i)Epoch Time of Scrape
-ii)Year
-iii)Title
-iv)Nomination
-v)Awards
-vi)isWinner
+5. Convert the ArrayList<HashMap> object to a JSON file named `oscar-winner-data.json`. 
+Each HashMap object should contain:
+
+1. Epoch Time of Scrape
+2. Year
+3. Title
+4. Nomination
+5. Awards
+6. isWinner
 
 6. Store the file in the output folder in the root directory. Assert using TestNG that the file is present and not empty.
 
@@ -59,7 +63,6 @@ git --version
 # gradle version 8.6
 gradle --version
 ```
-
 ```
 # vscode 1.88.1
 git --version
@@ -76,12 +79,10 @@ git --version
 # to build the project
 gradle build
 ```
-
 ```
 # to run the project
 gradle run
 ```
-
 ```
 # to test the project
 gradle test
