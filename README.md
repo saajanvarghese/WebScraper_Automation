@@ -36,12 +36,12 @@ Each Hashmap object should contain:
 5. Convert the ArrayList<HashMap> object to a JSON file named `oscar-winner-data.json`. 
 Each HashMap object should contain:
 
-. Epoch Time of Scrape
-. Year
-. Title
-. Nomination
-. Awards
-. isWinner
+- Epoch Time of Scrape
+- Year
+- Title
+- Nomination
+- Awards
+- isWinner
 
 6. Store the file in the output folder in the root directory. Assert using TestNG that the file is present and not empty.
 
