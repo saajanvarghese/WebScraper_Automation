@@ -4,34 +4,39 @@
         "Nominations": "9",
         "Awards": "4",
         "Year": "2014",
-        "Title": "Birdman"
+        "Title": "Birdman",
+        "epoch Time": "1713588218"
     },
     {
         "isWinner": "false",
         "Nominations": "9",
         "Awards": "4",
         "Year": "2014",
-        "Title": "The Grand Budapest Hotel"
+        "Title": "The Grand Budapest Hotel",
+        "epoch Time": "1713588218"
     },
     {
         "isWinner": "false",
         "Nominations": "5",
         "Awards": "3",
         "Year": "2014",
-        "Title": "Whiplash"
+        "Title": "Whiplash",
+        "epoch Time": "1713588218"
     },
     {
         "isWinner": "false",
         "Nominations": "8",
         "Awards": "1",
         "Year": "2014",
-        "Title": "The Imitation Game"
+        "Title": "The Imitation Game",
+        "epoch Time": "1713588218"
     },
     {
         "isWinner": "false",
         "Nominations": "6",
         "Awards": "1",
         "Year": "2014",
-        "Title": "American Sniper"
+        "Title": "American Sniper",
+        "epoch Time": "1713588218"
     }
 ]

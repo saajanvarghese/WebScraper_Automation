@@ -2,7 +2,6 @@ package demo;
 
 import java.io.File;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -10,8 +9,6 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -38,7 +35,7 @@ public class TestCases {
 
     }
 
-    //@Test
+    @Test
     public void testCase01() throws InterruptedException{
         System.out.println("Start Test case: testCase01");
         // Navigate to the link
@@ -58,6 +55,12 @@ public class TestCases {
 
         // Initialize and declare a HashMap ArrayList called dataList
          ArrayList<HashMap<String, String>> dataList = new ArrayList<>();
+
+         // Declare epochTime
+         long epoch = System.currentTimeMillis()/1000;
+
+         // Convert epochTime to String
+         String epochtime = String.valueOf(epoch);
 
          // Locate Page 1
          WebElement clickPageButton = driver.findElement(By.xpath("//a[@aria-label='Next']"));
@@ -81,6 +84,7 @@ public class TestCases {
                 if (winPercentage < 0.4) {
                     // Create a HashMap to store the data
                     HashMap<String, String> dataMap = new HashMap<>();
+                    dataMap.put("epoch Time", epochtime);
                     dataMap.put("TeamName", teamName);
                     dataMap.put("Year", String.valueOf(year));
                     dataMap.put("WinPercentage", String.valueOf(winPercentage));
@@ -102,7 +106,8 @@ public class TestCases {
 
         // Print the collected data
         for (HashMap<String, String> data : dataList) {
-            System.out.println("Team Name: " + data.get("TeamName") +
+            System.out.println("Epoch Time of Scrape: " + data.get("epoch Time")+
+            ", Team Name: " + data.get("TeamName") +
                     ", Year: " + data.get("Year") +
                     ", Win Percentage: " + data.get("WinPercentage"));
         }

@@ -34,6 +34,12 @@ public class Utilities {
         // Initialize and declare a HashMap ArrayList called movieList
         ArrayList<HashMap<String, String>> movieList = new ArrayList<>();
 
+        // Declare epochTime
+        long epoch = System.currentTimeMillis()/1000;
+
+        // Convert epochTime to String
+        String epochtime = String.valueOf(epoch);
+
             // Iterate through each row of the table
            List<WebElement> rows = driver.findElements(By.xpath("//tr[@class='film']"));
            // Declare int count = 0;
@@ -53,6 +59,7 @@ public class Utilities {
                String isWinnerText = String.valueOf(isWinner);
                // Create a HashMap to store the data
                    HashMap<String, String> dataMap = new HashMap<>();
+                   dataMap.put("epoch Time", epochtime);
                    dataMap.put("Year", yearLinktxt);
                    dataMap.put("Title", movieTitle);
                    dataMap.put("Nominations", String.valueOf(nominations));
@@ -72,7 +79,8 @@ public class Utilities {
 
            //Print the collected data
            for (HashMap<String, String> data : movieList) {
-            System.out.println("Year " + data.get("Year") +
+            System.out.println("Epoch Time of Scrape: " + data.get("epoch Time")+
+                ", Year " + data.get("Year") +
                     ", Title: " + data.get("Title") +
                     ", Nominations: " + data.get("Nominations")+
                     ", Awards: "+ data.get("Awards")+ 

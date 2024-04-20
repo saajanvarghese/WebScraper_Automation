@@ -4,34 +4,39 @@
         "Nominations": "7",
         "Awards": "3",
         "Year": "2012",
-        "Title": "Argo"
+        "Title": "Argo",
+        "epoch Time": "1713588224"
     },
     {
         "isWinner": "false",
         "Nominations": "11",
         "Awards": "4",
         "Year": "2012",
-        "Title": "Life of Pi"
+        "Title": "Life of Pi",
+        "epoch Time": "1713588224"
     },
     {
         "isWinner": "false",
         "Nominations": "8",
         "Awards": "3",
         "Year": "2012",
-        "Title": "Les Misérables"
+        "Title": "Les Misérables",
+        "epoch Time": "1713588224"
     },
     {
         "isWinner": "false",
         "Nominations": "12",
         "Awards": "2",
         "Year": "2012",
-        "Title": "Lincoln"
+        "Title": "Lincoln",
+        "epoch Time": "1713588224"
     },
     {
         "isWinner": "false",
         "Nominations": "5",
         "Awards": "2",
         "Year": "2012",
-        "Title": "Django Unchained"
+        "Title": "Django Unchained",
+        "epoch Time": "1713588224"
     }
 ]

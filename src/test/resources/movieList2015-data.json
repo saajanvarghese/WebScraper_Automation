@@ -4,34 +4,39 @@
         "Nominations": "6",
         "Awards": "2",
         "Year": "2015",
-        "Title": "Spotlight"
+        "Title": "Spotlight",
+        "epoch Time": "1713588214"
     },
     {
         "isWinner": "false",
         "Nominations": "10",
         "Awards": "6",
         "Year": "2015",
-        "Title": "Mad Max: Fury Road"
+        "Title": "Mad Max: Fury Road",
+        "epoch Time": "1713588214"
     },
     {
         "isWinner": "false",
         "Nominations": "12",
         "Awards": "3",
         "Year": "2015",
-        "Title": "The Revenant"
+        "Title": "The Revenant",
+        "epoch Time": "1713588214"
     },
     {
         "isWinner": "false",
         "Nominations": "6",
         "Awards": "1",
         "Year": "2015",
-        "Title": "Bridge of Spies"
+        "Title": "Bridge of Spies",
+        "epoch Time": "1713588214"
     },
     {
         "isWinner": "false",
         "Nominations": "5",
         "Awards": "1",
         "Year": "2015",
-        "Title": "The Big Short"
+        "Title": "The Big Short",
+        "epoch Time": "1713588214"
     }
 ]
